@@ -3,13 +3,18 @@ var https = require('https');
 
 var libjson = require('./lib/libjson.js');
 
+////////////////////////////////////////////////////////
 var json_string = fs.readFileSync('test.json', 'utf8');
- 
-
 libjson.print(json_string);
 
+////////////////////////////////////////////////////////
 
 var data= libjson.getvalue(json_string,["repository","type"]);
 console.log("getvalue [''repository'',''type''] ===> " + data);
+console.log("getvalue repository.type ===> " + libjson.getjsonobject(json_string).repository.type);
 
+
+////////////////////////////////////////////////////////
+var json_string = fs.readFileSync('testarray.json', 'utf8');
+libjson.csv(json_string,['dog']);
 
