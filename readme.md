@@ -3,7 +3,7 @@
 2. display json to pretty format 
 
 
-## 입력 파일
+### input sample (test.json)
 <pre><code>
 {
   "name": "json.human",
@@ -40,19 +40,16 @@
 </code></pre>   
 
 
-## 사용법
+### usage (print)
 <pre><code>
 var fs = require('fs');
 var libjson = require('./lib/libjson.js');
 var json_string = fs.readFileSync('test.json', 'utf8');
-var json_object=JSON.parse(json_string);
 
-var libjson = require('./lib/libjson.js');
-var json_object=JSON.parse(json_string);
-libjson.print(json_object);
+libjson.print(json_string);
 </code></pre>
 
-## 출력
+### output (print)
 <pre><code>
 d:\libjson>node test_json.js
 name : json.human
