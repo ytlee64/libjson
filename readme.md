@@ -1,4 +1,7 @@
-# jsonlib
+# libjson
+1. javascript json library
+2. display json to pretty format 
+
 
 ## 입력 파일
 <pre><code>
