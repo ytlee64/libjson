@@ -5,7 +5,7 @@ var libjson = require('./lib/libjson.js');
 
 ////////////////////////////////////////////////////////
 var json_string = fs.readFileSync('test.json', 'utf8');
-libjson.print(json_string);
+libjson.displaytree(json_string);
 
 ////////////////////////////////////////////////////////
 
@@ -16,5 +16,5 @@ console.log("getvalue repository.type ===> " + libjson.getjsonobject(json_string
 
 ////////////////////////////////////////////////////////
 var json_string = fs.readFileSync('testarray.json', 'utf8');
-libjson.csv(json_string,['dog']);
+libjson.displaytable(json_string,['dog']);
 
